@@ -1,13 +1,20 @@
 <template>
-    <div>
-        hello Mine
+    <div id="main">
+      <Header title="我的喵喵"/>
+      
+      <TabBar />
     </div>
 </template>
 
 <script>
+import Header from '@/components/header';
+import TabBar from '@/components/TabBar';
 export default {
-    name : 'Mine'
-
+    name : 'Mine',
+    components : {
+        Header,
+        TabBar
+    }
 }
 </script>
 
